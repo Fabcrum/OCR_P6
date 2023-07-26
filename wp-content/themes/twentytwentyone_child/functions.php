@@ -23,7 +23,7 @@ function theme_enqueue_styles()
 function affiche_lien_admin( $items, $args ) { 
 	if (is_user_logged_in()) { 
 		return	'<li class="lien_nousrencontrer"><a href="./nous-rencontrer">Nous rencontrer</a></li>
-				<li class="lien_admin"><a href="../wp-admin">Admin</a></li>
+				<li class="lien_admin"><a href="../wp-admin">lien</a></li>
 				<li class="lien_commander"><a href="./commander">commander</a></li>';
     }
 	else
