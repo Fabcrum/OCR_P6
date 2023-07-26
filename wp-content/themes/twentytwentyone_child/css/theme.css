@@ -33,19 +33,13 @@ h1, h1.accueil-titre {
     text-align: center;
     font-size: 38px;
     font-weight: 800;
-    padding-bottom: 30px;
+    padding: 50px 0 30px;
     text-transform: uppercase;
-    padding-top: 50px;
 }
 @media all and (max-width: 950px) { h1, h1.accueil-titre { font-size: 35px; } }
 @media all and (max-width: 820px) { h1, h1.accueil-titre { font-size: 28px; } }
 @media all and (max-width: 780px) { h1, h1.accueil-titre { font-size: 25px; } }
 @media all and (max-width: 550px) { h1, h1.accueil-titre { font-size: 20px; } }
-
-h1.accueil-titre {
-    color: var(--secondary-color);
-    margin-bottom: 100px;
-}
 
 h2 {
     font-size: 30px;
@@ -121,7 +115,6 @@ a:hover {
 .wp-block-columns.alignfull .wp-block-column p:not(.has-background) {
     padding: 0;
 }
-
 @media all and (max-width: 750px) {
     .wp-block-group::before, .wp-block-group::after { display:none; }
     .wp-block-columns .wp-block-column > * { margin-top: 0; margin-bottom: 0; }
@@ -139,14 +132,13 @@ a:hover {
 
 .bloc__container.courbe.ligne {
  /*   border-bottom: 10px solid #E3D9D0; */
-    padding-bottom: 150px;
+    padding-bottom: 120px;
 }
 .bloc__container.courbe.ligne::after {
     border-radius: 0 0 52% 48% / 87% 87% 13% 13%! important;
     background-color: #E3D9D0;
     height: 10px;
 }
-
 @media all and (max-width: 750px) { .bloc__container.courbe { border-radius: 0! important; padding: 50px 0 50px; } }
 
 .bloc__container p {

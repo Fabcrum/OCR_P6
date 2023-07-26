@@ -1,5 +1,18 @@
 /* PAGE D'ACCUEIL */
 
+/* BLOC INTRO */
+
+h1.accueil-titre {
+    color: var(--secondary-color);
+    margin-bottom: 100px;
+}
+@media all and (max-width: 950px) { h1.accueil-titre { padding: 40px 0 30px; } }
+@media all and (max-width: 820px) { h1.accueil-titre { padding: 30px 0 20px; } }
+@media all and (max-width: 780px) { h1.accueil-titre { padding: 30px 0 10px; } }
+@media all and (max-width: 550px) { h1.accueil-titre { padding: 30px 0 0px; } }
+
+/* VISUELS */ 
+
 .feuilles-canette { 
     padding-top: 3em;
 }
@@ -15,8 +28,6 @@
     margin-right: -10px;
 }
 
-@media all and (max-width: 400px) { .tuiles-parfums .wp-block-cover p { font-size: 30px; line-height: 1.2em; } }
-
 .canette {
     position: absolute;
 }
@@ -26,52 +37,101 @@
 @media all and (max-width: 1000px) { .canette { width: 180px; height: auto; } }
 @media all and (max-width: 950px) { .canette { width: 160px; height: auto; } }
 @media all and (max-width: 820px) { .canette { width: 140px; height: auto; } }
-@media all and (max-width: 550px) { .canette { display:none!important; } }
 
+/* Remplacement Canette + feuilles > vignette accueil */
+
+@media all and (max-width: 550px) { .canette { display:none!important; } }
 @media all and (min-width: 551px) { .vignette-accueil { display:none!important; } }
 
+/* BLOC PÄRFUMS */
 
-.tuiles-parfums {
+.accueil-parfums {
     max-width:950px;
     margin:auto;
 }
 
-.wp-block-group.tuiles-parfums {
+.wp-block-group.accueil-parfums {
     margin-top: 0;
     margin-bottom: 10px;
 }
+@media all and (max-width: 820px) {
+    .wp-block-group.accueil-parfums .wp-block-cover:not(.is-light) { margin-left: 10px; }
+    .wp-block-group.accueil-parfums .wp-block-cover.is-not-light { margin-left: 20px; }
+    .wp-block-group.accueil-parfums .wp-block-cover.is-light { margin-right: 10px; }
+}
+@media all and (max-width: 750px) {
+    .wp-block-group.accueil-parfums .wp-block-cover:not(.is-light), .wp-block-group.accueil-parfums .wp-block-cover.is-not-light, .wp-block-group.accueil-parfums .wp-block-cover.is-light {
+        margin: 0; }
+}
 
-.tuiles-parfums .wp-block-cover {
+
+.accueil-parfums .wp-block-cover {
     width:400px;
     max-height:262px;
 }
 
-.tuiles-parfums .wp-block-cover, .tuiles-parfums .wp-block-cover-image {
+.accueil-parfums .wp-block-cover, .accueil-parfums .wp-block-cover-image {
     min-height: 250px;
 }
 
-.tuiles-parfums .wp-block-cover p {
+.accueil-parfums .wp-block-cover p {
     font-weight: 800;
     font-size: 48px;
     line-height: 58px;
     text-transform: uppercase;
 }
-@media all and (max-width: 820px) { .tuiles-parfums .wp-block-cover p { font-size: 40px; line-height: 1.2em; } }
-@media all and (max-width: 400px) { .tuiles-parfums .wp-block-cover p { font-size: 30px; line-height: 1.2em; } }
+@media all and (max-width: 820px) { .accueil-parfums .wp-block-cover p { font-size: 40px; line-height: 1.2em; } }
+@media all and (max-width: 400px) { .accueil-parfums .wp-block-cover p { font-size: 30px; line-height: 1.2em; } }
 
-/* Témoignages */
+/* BLOC ENERGIE */
+
+.accueil-energie h2 {
+    margin-bottom: 30px;
+}
+
+.accueil-energie p {
+    line-height: 24px;
+}
+
+/* BLOC TEMOIGNAGES */
+
+.bloc__container.accueil {
+    padding: 80px 0 0;
+}
+@media all and (max-width: 820px) { .bloc__container.accueil { padding: 50px 0 0px; } }
+
+.accueil h3 {
+    color: var(--secondary-color);
+    padding-bottom: 50px;
+}
+
+/* Rangée de témoignages */
 
 .accueil-testimonials {
-    padding: 0 10% 300px;
+    padding-bottom: 300px;
+    justify-content: space-around! important;
 }
+@media all and (max-width: 1100px) { .accueil-testimonials { justify-content: center! important; padding-bottom: 200px; } }
 @media all and (max-width: 400px) { .accueil-testimonials { padding-bottom:100px; } }
+
+.accueil-testimonials .wp-block-media-text.alignwide {
+    max-width: 345px;
+    padding-bottom: 30px;
+}
+
+.accueil-testimonials .wp-block-media-text .wp-block-media-text__content {
+    padding: 18px;
+}
 
 .accueil-testimonials .wp-block-media-text__content p.has-large-font-size {
     font-size: 30px;
     font-weight: 700;
     color: var(--secondary-color);
+    line-height: 36px;
 }
 
 .accueil-testimonials .wp-block-media-text__content p {
     font-size: 16px;
+    margin: 5px auto;
+    line-height: 19.2px;
 }

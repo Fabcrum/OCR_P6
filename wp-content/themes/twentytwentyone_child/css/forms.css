@@ -6,23 +6,23 @@
     border: 0px;
     border-radius: 5px;
     margin-top: 10px;
-
 }
 
-.nousrencontrer-contact input.wpcf7-text, .commander-commande input.wpcf7-text  {
-    height: 71px;
+.nousrencontrer-contact input.wpcf7-text, .commander-commande input.wpcf7-text, .nousrencontrer-contact textarea.wpcf7-textarea, .commander-commande textarea.wpcf7-textarea {
     font-size: 20px;
     max-width: 383px;
 }
 
+.nousrencontrer-contact input.wpcf7-text, .commander-commande input.wpcf7-text  {
+    height: 71px;
+}
+
 .nousrencontrer-contact textarea.wpcf7-textarea, .commander-commande textarea.wpcf7-textarea {
     height: 237px;
-    font-size: 20px;
-    padding-left: 5%;
 }
 
 .nousrencontrer-contact p, .commander-commande p {
-padding-top: 20px;
+    padding-top: 20px;
 }
 
 .nousrencontrer-contact input.wpcf7-submit, .commander-commande input.wpcf7-submit {
