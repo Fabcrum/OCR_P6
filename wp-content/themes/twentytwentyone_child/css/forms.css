@@ -1,0 +1,158 @@
+/* FORMULAIRES */
+
+/* ELEMENTS COMMUNS */ 
+
+.nousrencontrer-contact input.wpcf7-text, .nousrencontrer-contact textarea.wpcf7-textarea, .commander-commande input.wpcf7-text, .commander-commande textarea.wpcf7-textarea {
+    border: 0px;
+    border-radius: 5px;
+    margin-top: 10px;
+
+}
+
+.nousrencontrer-contact input.wpcf7-text, .commander-commande input.wpcf7-text  {
+    height: 71px;
+    font-size: 20px;
+    max-width: 383px;
+}
+
+.nousrencontrer-contact textarea.wpcf7-textarea, .commander-commande textarea.wpcf7-textarea {
+    height: 237px;
+    font-size: 20px;
+    padding-left: 5%;
+}
+
+.nousrencontrer-contact p, .commander-commande p {
+padding-top: 20px;
+}
+
+.nousrencontrer-contact input.wpcf7-submit, .commander-commande input.wpcf7-submit {
+    display: block;
+    margin: auto;
+    padding: 9px 72px;
+}
+
+/* PAGE COMMANDER */
+/* Partie produits */
+
+#commande-produits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    max-width:90vw;
+}
+
+#col-commande {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 190px;
+    background-size: 100%!important;
+}
+
+#col-commande.fraise {
+    background: url("http://localhost/wp_P6/wp-content/uploads/2023/05/a3.png") no-repeat;
+}
+
+#col-commande.pamplemousse {
+    background: url("http://localhost/wp_P6/wp-content/uploads/2023/05/a2.png") no-repeat;
+}
+
+#col-commande.framboise {
+    background: url("http://localhost/wp_P6/wp-content/uploads/2023/05/a4.png") no-repeat;
+}
+
+#col-commande.citron {
+    background: url("http://localhost/wp_P6/wp-content/uploads/2023/05/a1-1.png") no-repeat;
+}
+
+#col-commande p {
+    padding: 0;
+}
+
+.vignette-commande {
+    height: 128px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.vignette-commande p {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 24px;
+    color: #fff;
+}
+
+.compteur { 
+    display: flex;
+}
+
+.commander-commande .wpcf7-number { 
+    height: 56px;
+    width: 51px;
+    border: 0px;
+    border-radius: 5px 0 0 5px;
+    text-align: center;
+    font-family:"inter";
+    font-size: 16px;
+}
+
+.commander-commande fieldset input:not([type="submit"]) {
+    margin: 0;
+  }
+
+div.button-ok p {
+    padding: 13px! important;
+    background-color: var(--soft-color);
+    width: 100px;
+    height: 56px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-left:10px;
+    color:#fff;
+    font-weight: 400;
+}
+
+div.button-ok p:hover, div.button-ok p label:hover, div.buttonplus p:hover, div.buttonmoins p:hover, div.buttonplus p label:hover, div.buttonmoins p label:hover {
+    background-color: var(--highlight-color);
+    cursor: pointer;
+}
+
+div.button-ok p:active, div.buttonplus p:active, div.buttonmoins p:active {
+    background-color: var(--soft-color);
+}
+
+div.compteur-bouton {
+    display:wrap;
+}
+
+div.buttonplus p, div.buttonmoins p  {
+    background-color: var(--primary-color);
+    text-align: center;
+    line-height: 24px;
+    color: #fff;
+  }
+
+div.buttonplus p  {
+    border-radius: 0 5px 0 0;
+    border-bottom: 1px solid #fff;
+    padding: 2px 10px!important;
+}
+
+div.buttonmoins p  {
+    border-radius:0 0 5px;
+    padding: 1px 10px 2px !important;
+}
+
+/* Retirer les flèches de base des champs number  */
+.commander-commande input[name="fraise"], .commander-commande input[name="pamplemousse"], .commander-commande input[name="framboise"], .commander-commande input[name="citron"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+}

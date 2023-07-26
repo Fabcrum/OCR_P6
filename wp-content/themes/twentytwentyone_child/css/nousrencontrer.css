@@ -1,0 +1,49 @@
+/* NOUS RENCONTRER */
+body.page-id-19 h1.entry-title, body.page-id-19 header.entry-header {
+    display:none;
+}
+
+.col-top-nousrencontrer {
+    max-width:1200px;
+    margin: auto;
+}
+
+.nousrencontrer-fleur { 
+    max-width: 200px;
+    position: absolute;
+    top: 150px;
+}
+
+@media all and (max-width: 1220px) { .nousrencontrer-fleur { max-width: 180px; left: 50px; top: 140px; } }
+@media all and (max-width: 1100px) { .nousrencontrer-fleur { max-width: 170px; left: 150px; top: 90px; } }
+@media all and (max-width: 1000px) { .nousrencontrer-fleur { max-width: 150px; left: 130px; top: 110px; } }
+@media all and (max-width: 950px) { .nousrencontrer-fleur { max-width: 130px; left: 110px; top: 110px; } }
+@media all and (max-width: 780px) { .nousrencontrer-fleur { max-width: 130px; left: 80px; top:110px; } }
+@media all and (max-width: 700px) { .nousrencontrer-fleur { max-width: 100px; left: 50px; top:90px; } }
+@media all and (max-width: 599px) {.nousrencontrer-fleur { display:none; } }
+
+.nousrencontrer-team { 
+    background: url('../images/feuille_d.png') no-repeat bottom 0px right 50px;
+    background-size: auto 220px;
+    padding: 30px 300px 50px;
+    margin-bottom:0;
+}
+@media all and (max-width: 1250px) { .nousrencontrer-team { padding: 30px 250px 50px; } }
+@media all and (max-width: 1100px) { .nousrencontrer-team {  background-size: auto 200px; padding: 30px 200px 50px; } }
+@media all and (max-width: 950px) { .nousrencontrer-team { background-size: auto 120px; padding: 30px 100px 50px; background-position: bottom right 10px; } }
+@media all and (max-width: 780px) { .nousrencontrer-team { background-size: auto 200px; padding: 30px 130px 50px; background-position: bottom right 50px; } }
+@media all and (max-width: 700px) { .nousrencontrer-team { background-size: auto 200px; padding: 30px 70px 50px; background-position: bottom right 10px; } }
+@media all and (max-width: 599px) { .nousrencontrer-team { background-size: auto 200px; padding: 30px 10px 50px; background-position: bottom right 10px; } }
+
+.nousrencontrer-contact { 
+    margin-block-start: 0! important;
+    padding-bottom: 150px;
+}
+
+.nousrencontrer-contact .wpcf7 {
+    max-width: 550px;
+    margin: auto;
+    padding: 0 60px 100px;
+    background: url('../images/fleur2.png') no-repeat bottom 150px left;
+}
+@media all and (max-width: 700px) { .nousrencontrer-contact .wpcf7 { padding: 0 0px 100px; background-position: bottom 50px left 25px; } }
