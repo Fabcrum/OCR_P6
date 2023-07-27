@@ -129,7 +129,7 @@ div.button-ok p:active, div.buttonplus p:active, div.buttonmoins p:active {
 }
 
 div.compteur-bouton {
-    display:wrap;
+    display: wrap;
 }
 
 div.buttonplus p, div.buttonmoins p  {

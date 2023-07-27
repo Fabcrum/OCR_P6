@@ -39,6 +39,7 @@ body.page-id-19 h1.entry-title, body.page-id-19 header.entry-header {
     margin-block-start: 0! important;
     padding-bottom: 150px;
 }
+@media all and (max-width: 700px) { .nousrencontrer-contact  { padding-top: 25px; } }
 
 .nousrencontrer-contact .wpcf7 {
     max-width: 550px;
