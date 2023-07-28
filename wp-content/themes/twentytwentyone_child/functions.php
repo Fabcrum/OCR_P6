@@ -18,15 +18,3 @@ function theme_enqueue_styles()
 }
 
 
-/* VERSION AJOUT > RETIRER LE LIEN ADMIN DANS LE MENU ET LES CLASS DANS HEADER.CSS */
-
-function affiche_lien_admin( $items, $args ) { 
-	if (is_user_logged_in()) { 
-		return	'<li class="lien_nousrencontrer"><a href="./nous-rencontrer">Nous rencontrer</a></li>
-				<li class="lien_admin"><a href="http://localhost/wp_P6/wp-admin">Admin</a></li>
-				<li class="lien_commander"><a href="./commander">commander</a></li>';
-    }
-	else
-	return $items;
-}
-add_filter( 'wp_nav_menu_items', 'affiche_lien_admin', 10, 2 ); 
