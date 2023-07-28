@@ -1,0 +1,88 @@
+/* HEADER */
+.site-header {
+    padding: 0;
+    max-width: 100%;
+}
+
+.site-branding {
+    margin-top: 0;
+}
+
+/* LOGO */
+.site-logo .custom-logo {
+    padding-left: 37px;
+}
+
+/* TOP MENU */
+.primary-navigation .primary-menu-container
+{
+    margin: 0;
+}
+
+.primary-menu-container li {
+    padding: 30px 61px 31px;
+}
+
+.primary-menu-container li a {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 1px 2px;
+}
+
+.primary-menu-container li a:hover {
+    text-decoration: none;
+    font-weight: 700;
+    margin-right: -1px;
+    margin-left: -2px;
+}
+
+.primary-navigation .current-menu-item > a:first-child,
+.primary-navigation .current_page_item > a:first-child {
+    text-decoration: none;
+}
+
+.primary-menu-container li.lien_nousrencontrer {
+    padding-right: 0;
+}
+
+.primary-menu-container li.lien_nousrencontrer a {
+    font-size: 13px;
+    padding-top: 4px;
+}
+
+/* REPONSIVE */
+@media all and (max-width: 1200px) { .primary-menu-container li { padding: 25px 41px 26px; } }
+@media all and (max-width: 950px) { .primary-menu-container li { padding: 20px 21px 21px; } }
+@media all and (max-width: 820px) { .primary-menu-container li { padding: 20px 11px 21px; } }
+@media all and (max-width: 780px) { .primary-menu-container li { padding: 15px 11px 16px; } }
+@media all and (max-width: 700px) { .primary-menu-container li { padding: 15px 11px 16px; } }
+
+
+/* BOUTONS SUR ECRAN */
+@media all and (min-width: 700px) {
+
+    /* SPECIFIQUE BOUTON COMMANDER SUR ECRAN */
+    .primary-menu-container li.lien_commander a {
+        font-weight: 700;
+    }
+
+    .primary-menu-container li.lien_commander {
+        background-color: var(--primary-color);
+    }
+
+    .primary-menu-container li.lien_commander:hover {
+        background-color: var(--highlight-color);
+    }
+
+    .primary-menu-container li.lien_commander a {
+        font-weight: 700;
+        color:#fff;
+    }
+    .primary-menu-container li.lien_commander a:hover {
+        margin: 0;
+    }
+
+}
+
+/* DISPLAY LIEN ADMIN */
+.no_lien_admin { display: none!important; }

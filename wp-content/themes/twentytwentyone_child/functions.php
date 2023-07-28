@@ -18,13 +18,3 @@ function theme_enqueue_styles()
 }
 
 
-/* VERSION RETRAIT */
-
-function change_lien_classe( $classes, $item ) {
-	if ( !is_user_logged_in() && $item->title == 'Admin' ) {
-	   $classes[] = 'no_lien_admin';
-	}
-	return $classes;
-}
-add_filter( 'nav_menu_css_class', 'change_lien_classe', 10, 2 );
-?>

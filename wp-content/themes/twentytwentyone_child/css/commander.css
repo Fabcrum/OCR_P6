@@ -1,0 +1,66 @@
+/* COMMANDER */
+body.page-id-25 h1.entry-title, body.page-id-25 header.entry-header {
+    display:none;
+}
+
+.commander-commande .wpcf7 {
+    margin: auto;
+    padding-bottom: 50px;
+}
+@media all and (min-width: 950px) { .commander-commande .wpcf7 { width: 860px; } }
+@media all and (max-width: 700px) { .commander-commande .wpcf7 { width: 95%; } }
+
+.commander-commande .wpcf7 .separateur.horizontal {
+    width: 100%;
+    height: 1px;
+    border-top: 1px solid #fff;
+    margin: 50px 0;
+}
+
+.commander-commande .wpcf7 fieldset {
+    border:0px;
+    padding: 0;
+}
+
+.commander-commande .wpcf7 fieldset legend {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.commander-commande .wpcf7 label {
+    color: #fff;
+    font-size: 20px;
+}
+
+/* Partie Informations / livraison */
+
+#vos-informations-livraison {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 34px;
+    margin-bottom: 50px;
+}
+
+#vos-informations, #livraison {
+    width: 392px;
+}
+@media all and (max-width: 700px) { #vos-informations, #livraison { width: 100%; } }
+
+#livraison {
+    margin-left: 4px;
+}
+@media all and (max-width: 700px) { #livraison { margin-left: 0; } }
+
+.commander-commande .wpcf7 .separateur.vertical {
+    width: 4px;
+    height: auto;
+    border-left: 1px solid #fff;
+ }
+ @media all and (max-width: 700px) { .commander-commande .wpcf7 .separateur.vertical { display:none; } }
+ @media all and (min-width: 700px) { .commander-commande .wpcf7 .separateur.horizontal.remplace { display:none; } }
+
+#vos-informations fieldset p, #livraison fieldset p {
+    padding-left:0;
+    padding-right:0;
+}

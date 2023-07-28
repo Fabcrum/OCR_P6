@@ -1,0 +1,152 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+h1, h1.accueil-titre, h2, h3, h4, * {
+    font-family: 'Syne', sans-serif;
+    margin:0;
+    padding:0;
+}
+
+:root {
+    --primary-color: #DC9F96; 
+    --secondary-color: #3B8E46;
+    --highlight-color: #C02E44;
+    --soft-color: #E0B9B4;
+    --title-color: #D2776A;
+}
+
+/* BLOCS ET ELEMENTS COMMUNS TOUTES PAGES */
+/* CORPS DE PAGES */
+
+.site-main {
+    padding: 0;
+}
+
+.site-main > article > * {
+    margin-top: 0;
+}
+
+/* TITRES ET TEXTES */
+
+h1, h1.accueil-titre {
+    color: var(--title-color);
+    text-align: center;
+    font-size: 38px;
+    font-weight: 800;
+    padding: 50px 0 30px;
+    text-transform: uppercase;
+}
+@media all and (max-width: 950px) { h1, h1.accueil-titre { font-size: 35px; } }
+@media all and (max-width: 820px) { h1, h1.accueil-titre { font-size: 28px; } }
+@media all and (max-width: 780px) { h1, h1.accueil-titre { font-size: 25px; } }
+@media all and (max-width: 550px) { h1, h1.accueil-titre { font-size: 20px; } }
+
+h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+@media all and (max-width: 820px) { h2 { font-size: 28px; } }
+@media all and (max-width: 780px) { h2 { font-size: 25px; } }
+@media all and (max-width: 550px) { h2 { font-size: 23px; } }
+
+h3, .has-background h3 {
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--title-color);
+    text-transform: uppercase;
+}
+@media all and (max-width: 820px) { h3 { font-size: 28px; } }
+@media all and (max-width: 780px) { h3 { font-size: 25px; } }
+@media all and (max-width: 550px) { h3 { font-size: 23px; } }
+
+h4 {
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+@media all and (max-width: 820px) { h3 { font-size: 28px; } }
+@media all and (max-width: 780px) { h3 { font-size: 25px; } }
+@media all and (max-width: 550px) { h3 { font-size: 23px; } }
+
+p {
+    font-size: 20px;
+}
+
+strong {
+    font-weight: 700;
+}
+
+a, .widget a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--highlight-color);
+}
+
+/* BOUTONS */
+
+.wp-block-button__link, .wp-block-button:not(.is-style-outline) .wp-block-button__link, .nousrencontrer-contact input.wpcf7-submit, .commander-commande input.wpcf7-submit {
+    background-color: var(--soft-color)! important;
+    border-radius: 5px;
+    color: #fff!important;
+}
+
+.wp-block-button__link:hover, .wp-block-button:not(.is-style-outline) .wp-block-button__link:hover, .nousrencontrer-contact input.wpcf7-submit:hover,.commander-commande input.wpcf7-submit:hover {
+    background-color: var(--highlight-color)! important;
+    cursor: pointer;
+    color: #fff! important;
+}
+
+.wp-block-buttons > .wp-block-button .wp-block-button__link, .nousrencontrer-contact input.wpcf7-submit, .commander-commande input.wpcf7-submit {
+    font-size: 15px;
+    line-height: 37px;
+    padding: 9px 56px;
+    color:#fff;
+    border: 0px;
+}
+
+/* BLOCS TOUTES PAGES */
+/* Bannières et colonnes et flex */
+.wp-block-cover .wp-block-cover__inner-container { 
+    width: 100%;
+}
+.wp-block-columns.alignfull .wp-block-column p:not(.has-background) {
+    padding: 0;
+}
+@media all and (max-width: 750px) {
+    .wp-block-group::before, .wp-block-group::after { display:none; }
+    .wp-block-columns .wp-block-column > * { margin-top: 0; margin-bottom: 0; }
+}
+
+/* Ajouts */
+.bloc__container {
+    padding: 50px 0 50px;
+}
+@media all and (max-width: 820px) { .bloc__container { padding: 50px 0px; } }
+
+.bloc__container.courbe, .bloc__container.courbe {
+    border-radius: 0 0 52% 48% / 87% 87% 13% 13%! important;
+}
+
+.bloc__container.courbe.ligne {
+ /*   border-bottom: 10px solid #E3D9D0; */
+    padding-bottom: 120px;
+}
+.bloc__container.courbe.ligne::after {
+    border-radius: 0 0 52% 48% / 87% 87% 13% 13%! important;
+    background-color: #E3D9D0;
+    height: 10px;
+}
+@media all and (max-width: 750px) { .bloc__container.courbe { border-radius: 0! important; padding: 50px 0 50px; } }
+
+.bloc__container p {
+    max-width: 750px;
+    margin: auto;
+}
+
+
+/* Espacements */
+
+@media all and (max-width: 700px) { .space-min { max-height:20px; margin:0; } }
