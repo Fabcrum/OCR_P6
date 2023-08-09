@@ -17,7 +17,7 @@ function theme_enqueue_styles()
 	wp_enqueue_style('forms-style', get_stylesheet_directory_uri() . '/css/forms.css', array(), filemtime(get_stylesheet_directory() . '/css/forms.css'));
 }
 
-/* RETRAIT DU LIEN ADMIN PAR CHANGEMENT DE CLASSE */
+/* RETRAIT DU LIEN ADMIN VERS TABLEAU DE BORD PAR CHANGEMENT DE CLASSE */
 function change_lien_classe( $classes, $item ) {
 	if ( !is_user_logged_in() && $item->title == 'Admin' ) {
 	   $classes[] = 'no_lien_admin';
