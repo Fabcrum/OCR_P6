@@ -26,3 +26,4 @@ function change_lien_classe( $classes, $item ) {
 }
 add_filter( 'nav_menu_css_class', 'change_lien_classe', 10, 2 );
 ?>
+
