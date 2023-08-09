@@ -1,0 +1,28 @@
+/* NOUS RENCONTRER */
+
+figure.nousrencontrer-fleur { 
+    max-width: 200px;
+    left: 180px;
+    top: 151px;
+    position: absolute;
+}
+@media all and (max-width: 1220px) { figure.nousrencontrer-fleur { max-width: 180px; left: 170px; top: 140px; } }
+@media all and (max-width: 1100px) { figure.nousrencontrer-fleur { max-width: 170px; left: 150px; top: 140px; } }
+@media all and (max-width: 1000px) { figure.nousrencontrer-fleur { max-width: 150px; left: 130px; top: 140px; } }
+@media all and (max-width: 950px) { figure.nousrencontrer-fleur { max-width: 130px; left: 110px; top: 140px; } }
+@media all and (max-width: 780px) { figure.nousrencontrer-fleur { max-width: 130px; left: 80px; top:140px; } }
+@media all and (max-width: 700px) { figure.nousrencontrer-fleur { max-width: 100px; left: 65px; top:170px; } }
+@media all and (max-width: 599px) { figure.nousrencontrer-fleur { max-width: 100px; left: 65px; top:140px; } }
+
+.nousrencontrer-team { 
+    background: url('../images/feuille_d.png') no-repeat bottom 0px right 50px;
+    background-size: auto 220px;
+}
+@media all and (max-width: 950px) { .nousrencontrer-team { background-size: auto 220px; } }
+@media all and (max-width: 780px) { .nousrencontrer-team { background-size: auto 170px; } }
+@media all and (max-width: 700px) { .nousrencontrer-team { background-size: auto 80px; } }
+
+.nousrencontrer-contact { 
+    margin-block-start: 0! important;
+    padding-bottom: 150px;
+}

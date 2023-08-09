@@ -1,0 +1,6 @@
+/* FOOTER */
+
+.accueil-testimonials, .nousrencontrer-contact { 
+    background: url('../images/footer.png') no-repeat bottom;
+    background-size: 100vw auto;
+}

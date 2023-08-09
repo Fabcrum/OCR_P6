@@ -1,0 +1,21 @@
+/* FOOTER */
+
+.accueil-testimonials, .nousrencontrer-contact { 
+    background: url('../images/footer.png') no-repeat bottom;
+    background-size: 100vw auto;
+}
+
+.widget-area { 
+    margin: 0;
+    padding: 0;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+}
+
+.widget-area > * {     
+    margin: 0;
+}
+
+p.liens_mentions {
+    padding:15px;
+}

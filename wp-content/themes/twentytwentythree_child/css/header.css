@@ -1,0 +1,81 @@
+/* HEADER */
+
+/* LOGO */
+
+header img.custom-logo { padding-left:37px; }
+
+/* TOP MENU */
+
+nav.nav-entete {
+    padding: 0;
+    padding-right: 0! important;
+}
+
+.wp-block-navigation .wp-block-navigation-item {
+    padding: 30px 61px 31px;
+}
+.wp-block-navigation .wp-block-navigation-item.lien_nousrencontrer {
+    padding: 30px 0px 31px;
+}
+
+/* REPONSIVE */
+
+@media all and (max-width: 1200px) { .wp-block-navigation .wp-block-navigation-item { padding: 25px 41px 26px; } }
+@media all and (max-width: 950px) { .wp-block-navigation .wp-block-navigation-item { padding: 20px 21px 21px; } }
+@media all and (max-width: 820px) { .wp-block-navigation .wp-block-navigation-item { padding: 20px 11px 21px; } }
+@media all and (max-width: 780px) {
+    header img.custom-logo { padding:15px 0; }
+    nav.nav-entete { padding: 0! important; }
+    .wp-block-navigation .wp-block-navigation-item { padding: 15px 11px 16px; }
+}
+@media all and (max-width: 700px) {
+    .wp-block-site-logo { margin: auto!important; }
+    header img.custom-logo { padding: 20px 0 10px; }
+    nav.nav-entete { margin: auto;; }
+    .wp-block-navigation .wp-block-navigation-item { padding: 15px 11px 16px; }
+}
+
+/* DETAIL LIENS */
+
+li.wp-block-navigation-item.current-menu-item.wp-block-navigation-link {
+    font-weight: 400;
+}
+
+.wp-block-navigation .wp-block-navigation-item a {
+    font-size: 16px;
+}
+
+
+@media all and (min-width: 700px) {
+
+/* Changement de taille et marges internes au survol */
+
+.wp-block-navigation .wp-block-navigation-item:hover a {
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0 4.4px;
+}
+
+.wp-block-navigation .wp-block-navigation-item.lien_commander a {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0;
+}
+
+/* Couleur spécifique bouton COMMANDER */
+
+.wp-block-navigation .wp-block-navigation-item.lien_commander {
+    background-color: var(--primary-color);
+}
+
+.wp-block-navigation .wp-block-navigation-item.lien_commander:hover {
+    background-color: var(--highlight-color);
+}
+
+.wp-block-navigation .wp-block-navigation-item.lien_commander a {
+    font-weight: 700;
+    color:#fff;
+}
+
+}
